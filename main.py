@@ -11,14 +11,14 @@ form= """
 <html>
     <head>
         <style>
-            form{
-                Background-color:#eee;
+            form{{
+                Background-color: #eee;
                 padding: 20px;
                 margin: 0 auto;
                 width: 540px;
                 font: 16px sans-serif;
                 border-radius: 10px;
-            }
+            }}
             textarea {{
                 margin: 10px 0;
                 width: 540px;
@@ -50,8 +50,5 @@ def encrypt():
     return form.format(...)
 
 
-@app.route("/form", methods=['POST'])
-def form():
-    form_value = request.form['rot']
-    return '<h1>form, ' + rot + '</h1>'
+
 app.run()
